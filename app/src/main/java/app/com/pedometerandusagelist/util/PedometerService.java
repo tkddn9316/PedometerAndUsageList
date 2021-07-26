@@ -112,7 +112,7 @@ public class PedometerService extends Service implements SensorEventListener, Al
 
     @Override
     public void onAccuracyChanged(Sensor sensor, int i) {
-// digh
+
     }
 
     // 센서 초기화
