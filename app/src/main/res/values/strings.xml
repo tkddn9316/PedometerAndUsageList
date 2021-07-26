@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PedometerAndUsageList</string>
+    <string name="main_title">MAIN</string>
+    <string name="authority_title">Authority</string>
+    <string name="pedometer_title">Pedometer</string>
+    <string name="pedometer_steps">steps</string>
+
+    <string name="toast_sensor_not_found">해당 디바이스는 걷기 센서가 없습니다!</string>
+    <string name="notification_default">테스트 중: 아직 걸은 기록이 없습니다.</string>
+</resources>

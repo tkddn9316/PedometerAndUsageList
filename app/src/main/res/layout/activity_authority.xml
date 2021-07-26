@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.AuthorityActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_e30800">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:background="@android:color/transparent"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/authority_title"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_c9c9c9"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/layout_recognition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/box_ffffff"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/image_recognition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_baseline_directions_run_24" />
+
+                    <LinearLayout
+                        android:id="@+id/text_recognition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@+id/image_recognition"
+                        android:layout_toStartOf="@+id/button_recognition"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="신체 활동(필수)"
+                            android:textColor="#9d9d9d"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="걸음 수 측정에 필요합니다."
+                            android:textColor="#9d9d9d"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/button_recognition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/button_personal"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="권한 설정하기"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_usage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/box_ffffff"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/image_usage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_baseline_playlist_add_check_24" />
+
+                    <LinearLayout
+                        android:id="@+id/text_usage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@+id/image_usage"
+                        android:layout_toStartOf="@+id/button_usage"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="사용 정보 접근 허용(필수)"
+                            android:textColor="#9d9d9d"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="앱 사용량 측정을 위해 필요합니다."
+                            android:textColor="#9d9d9d"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/button_usage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/button_personal"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="권한 설정하기"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>
